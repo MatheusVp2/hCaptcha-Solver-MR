@@ -1,6 +1,6 @@
 # hCaptcha-Solver-MR
 
-- ByPass do hCaptcha, feito apartir da analise das rotas do servvidor do hCaptcha !
+- ByPass do hCaptcha, feito apartir da analise das rotas do servidor do hCaptcha !
 
 ### Necessario
 ```python
