@@ -248,8 +248,3 @@ class hCaptcha():
 
         return { "UUID" : self.__uuid }
 
-
-
-resolver = hCaptcha( '51829642-2cda-4b09-896c-594f89d700cc', 'democaptcha.com' )
-resolver.ResolverCaptcha()
-resolver.TimeExecutionToString()
