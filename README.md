@@ -20,3 +20,6 @@ resolver = hCaptcha( site_key, site_host )
 resolver.ResolverCaptcha() # Retorna um Json com o UUID caso consiga resolver  e tambem e printado no console
 resolver.TimeExecutionToString()
 ```
+
+### Codigo de Referência
+- https://github.com/backslash/hCaptcha-Solver-2.0
