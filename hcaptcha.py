@@ -240,7 +240,7 @@ class hCaptcha():
 
         self.__detections_images()
 
-        # self.__remove_images_from_folder()
+        self.__remove_images_from_folder()
 
         self.submit()
 
