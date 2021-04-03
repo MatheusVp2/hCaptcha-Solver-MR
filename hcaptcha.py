@@ -1,7 +1,6 @@
 
 from selenium import webdriver  # Drive Selenium
 from selenium.webdriver.chrome.options import Options  # Options do Chrome
-from selenium.webdriver.support.ui import WebDriverWait  # Espera de carregamento
 
 from imageai.Detection import ObjectDetection # Detecção dos Objetos
 
