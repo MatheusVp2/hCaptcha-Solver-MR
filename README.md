@@ -27,9 +27,9 @@ resolver.TimeExecutionToString()
 
 ### Atualizações
 
-[x] - Adicionado a função de cofiguração
-    [x] - config: saveImage [True ou False], para utilizar o detection pela imagem salva ou diretamente por requisição => Padão = True
-    [x] - config: removeImage [True ou False], para apagar ou não as imagens detectadas da pasta, removeImage somente para saveImage True => Padão = True
+[x] Adicionado a função de cofiguração
+    [x] config: saveImage [True ou False], para utilizar o detection pela imagem salva ou diretamente por requisição => Padão = True
+    [x] config: removeImage [True ou False], para apagar ou não as imagens detectadas da pasta, removeImage somente para saveImage True => Padão = True
 
 ### Codigo de Referência
 - https://github.com/backslash/hCaptcha-Solver-2.0
