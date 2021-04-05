@@ -158,7 +158,7 @@ class hCaptcha():
             data['c'] = json.dumps( self.__c ).replace("'", '"')
 
         response = SESSAO_REQUESTS.post( url , data=data )
-        saveJson('payload.json', response.json() )
+        
         return response.json()
 
     def __is_correct_v2( self, obj, taskkey ):
@@ -282,6 +282,13 @@ class hCaptcha():
             self.__finish_time = time.time()
             return { "UUID" : None, "error": self.__payload }
 
+        if type == 'hsl':
+            response_start = self.__start_req_hcaptcha()
+            self.__c = response_start.get('c')
+            type = self.__c.get('type')
+            req  = self.__c.get('req')
+            self.__n = self.__get_n_hsw_or_hsl( type, req )
+
         self.__detections_images()
 
         if self.__has_save_image == True and self.__remove_data_images == True:
@@ -293,9 +300,9 @@ class hCaptcha():
 
         return { "UUID" : self.__uuid }
 
+# 'f9630567-8bfa-4fc9-8ee5-9c91c6276dff', 'cfcaptcha.audiograb.net'
 
-
-resolver = hCaptcha( 'f9630567-8bfa-4fc9-8ee5-9c91c6276dff', 'cfcaptcha.audiograb.net' )
+resolver = hCaptcha( '51829642-2cda-4b09-896c-594f89d700cc', 'democaptcha.com' )
 resolver.config( saveImage=False )
 UUID = resolver.ResolverCaptcha()
 resolver.TimeExecutionToString()
